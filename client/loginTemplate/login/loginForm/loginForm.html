@@ -1,0 +1,16 @@
+<template name="loginForm">
+
+                <form id="loginForm" class="form-signin">
+                    <input name="email" type="email" class="form-control"
+                           placeholder="E-mail" autofocus>
+                    <input name="password" type="password" class="form-control" placeholder="Passwort"
+                           pattern=".{6,32}" required title="6-32 characters " style="   margin-bottom: 10px;">
+                    <input type="submit" class="btn btn-lg btn-default btn-block" value="Login"/>
+                </form>
+                <div id="tabs" data-tabs="tabs">
+                    <p class="text-center"><a href="/createUser">Registrieren</a></p>
+
+                    <p class="text-center"><a href="/forgotPassword">Passwort vergessen</a></p>
+                </div>
+
+</template>
